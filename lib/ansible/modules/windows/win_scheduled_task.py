@@ -352,8 +352,9 @@ options:
     version_added: '2.5'
   execution_time_limit:
     description:
-    - The amount of time allowed to complete the task.
-    - When not set, the time limit is infinite.
+    - The amount of time allowed to complete the task. (Task Settings "Stop the task if runs longer than:")
+    - When not set, the time limit is not changed (default 3 days).
+    - For unlimited time (disable) set to 'PT0S'
     - This is in the ISO 8601 Duration format C(P[n]Y[n]M[n]DT[n]H[n]M[n]S).
     type: str
     version_added: '2.5'
